@@ -1,0 +1,55 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(29, 29, 29);
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .container {
+    padding: 70px 0;
+  }
+  
+  p, li {
+    color: black;
+    font-size: 14px;
+  }
+
+  h5{
+    color: black;
+  }
+
+/* Time */
+
+.card-body {
+    text-align: center;
+    background-color: #f9bb00;
+    
+  }
+
+  img{
+    
+    height: 346.72px;
+  }
+
+  .card{
+    background-color: #f9bb00;
+  }
+
+  .main-title {
+    color: white;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .main-title::after {
+    content: "";
+    border-top: 2px solid white;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+  }

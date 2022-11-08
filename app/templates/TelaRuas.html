@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+</head>
+
+<body>
+    <!--Tela Principal de Ruas (LISTA Ruas)-->
+
+
+    <ul id="tabela">
+    {%for Rua in Ruas%}
+    <table>
+        <thead>
+            <tr>
+
+                <th> NOME: <th>{{Rua.nome}}</th> </th>
+                <th> FOTONA: <th>{{Rua.foto}}</th> </th>
+                <th> DESCRICAO: <th>{{Rua.descricao}}</th></th>                
+                <th><a href="{% url 'url_update_rua' Rua.id%}">Editar Rua </a></th>
+                <th><a href="{% url 'url_delete_rua' Rua.id%}">Deletar Rua</a></th>
+            </tr>
+        </thead>   
+    </table>   
+    {% endfor %}
+    <button>
+        <a href="{% url 'url_create_rua' %}">Adicionar Rua</a>
+    </button>
+    </ul>
+</body>
+</html>
